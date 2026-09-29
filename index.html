@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GarageQR — Mitsubishi Xpander 2022</title>
+<style>
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f3f6fa;color:#172033}
+header{background:#101b2d;color:white;padding:28px 20px}
+.wrap{max-width:950px;margin:auto}
+.logo{font-size:28px;font-weight:800}.logo span{color:#2da8ff}
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:20px;align-items:center}
+.card{background:white;border-radius:18px;padding:22px;margin:18px 0;box-shadow:0 5px 20px #00000012}
+.car{font-size:25px;font-weight:800;margin-bottom:8px}
+.badge{display:inline-block;background:#e8f7ee;color:#18844a;padding:6px 10px;border-radius:20px;font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.item{background:#f7f9fc;padding:15px;border-radius:12px}.label{font-size:13px;color:#6d7788}.value{font-weight:700;margin-top:5px}
+.timeline{border-left:3px solid #2da8ff;padding-left:18px}.event{margin:18px 0}
+.qr{width:210px;max-width:100%;display:block;margin:auto}
+button{border:0;background:#178fe5;color:white;padding:11px 16px;border-radius:10px;font-weight:700;cursor:pointer}
+footer{text-align:center;color:#778094;padding:30px}
+@media(max-width:700px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><div class="logo">Garage<span>QR</span></div><div>Hồ sơ điện tử cho từng chiếc xe</div></div></header>
+<main class="wrap">
+<section class="hero">
+<div class="card">
+<div class="car">Mitsubishi Xpander 2022</div>
+<span class="badge">Hồ sơ mẫu — DEMO-001</span>
+<p>Trang minh họa cho ý tưởng GarageQR. Thông tin dưới đây là dữ liệu mẫu, không phải hồ sơ của một chiếc xe thực tế.</p>
+<div class="grid">
+<div class="item"><div class="label">Biển số</div><div class="value">51H-123.45</div></div>
+<div class="item"><div class="label">Số km hiện tại</div><div class="value">32.500 km</div></div>
+<div class="item"><div class="label">Động cơ</div><div class="value">1.5L MIVEC</div></div>
+<div class="item"><div class="label">Số chỗ</div><div class="value">7 chỗ</div></div>
+</div>
+</div>
+<div class="card" style="text-align:center">
+<img class="qr" src="garageqr_xpander_2022_demo.png" alt="Mã QR GarageQR mẫu">
+<p><b>GARAGEQR — DEMO-001</b></p>
+<button onclick="navigator.clipboard?.writeText('GARAGEQR|MITSUBISHI XPANDER|2022|DEMO-001')">Sao chép mã hồ sơ</button>
+</div>
+</section>
+
+<section class="card">
+<h2>Lịch sử bảo dưỡng mẫu</h2>
+<div class="timeline">
+<div class="event"><b>20/09/2026 — 32.000 km</b><br>Kiểm tra tổng quát • Garage Demo</div>
+<div class="event"><b>15/06/2026 — 28.500 km</b><br>Thay dầu động cơ • Garage Demo</div>
+<div class="event"><b>10/12/2025 — 22.000 km</b><br>Kiểm tra phanh và lốp • Garage Demo</div>
+</div>
+</section>
+
+<section class="card">
+<h2>Nhắc bảo dưỡng</h2>
+<div class="grid">
+<div class="item"><div class="label">Mốc dự kiến</div><div class="value">33.000 km hoặc 6 tháng</div></div>
+<div class="item"><div class="label">Trạng thái</div><div class="value">Còn khoảng 500 km</div></div>
+</div>
+<p style="color:#687386">Mốc trên chỉ là dữ liệu minh họa cho prototype. Khi triển khai thật, lịch bảo dưỡng cần dựa trên khuyến cáo của nhà sản xuất và lịch sử thực tế của từng xe.</p>
+</section>
+</main>
+<footer>GarageQR — Prototype học tập • Dữ liệu minh họa</footer>
+</body></html>
